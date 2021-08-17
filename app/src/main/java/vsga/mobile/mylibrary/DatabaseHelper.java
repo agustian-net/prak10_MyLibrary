@@ -58,7 +58,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if(c.moveToFirst()){
             do {
                 name = c.getString(c.getColumnIndex(KEY_FIRSTNAME));
-                //adding to Student List
+                //adding to Student Lists
                 studentArrayList.add(name);
             } while (c.moveToNext());
             Log.d("array", studentArrayList.toString());
